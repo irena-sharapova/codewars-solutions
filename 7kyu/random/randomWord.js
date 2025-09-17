@@ -1,12 +1,9 @@
-function pickRandom(arr) {
-  if (!Array.isArray(arr) || arr.length === 0) return null;
-  return arr[Math.floor(Math.random() * arr.length)];
-}
-
 const args = process.argv.slice(2);
 
-if (args.length > 0) {
-  const word = pickRandom(args);
-  if (word != null) console.log(word);
+if (args.length === 0) {
+  console.log("No words provided.");
   process.exit(0);
 }
+
+const randomIndex = Math.floor(Math.random() * args.length);
+console.log(args[randomIndex]);
