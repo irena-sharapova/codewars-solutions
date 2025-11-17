@@ -27,4 +27,16 @@ console.log (sum (numbers));
 function greet () {
   return "hello world!";
   }
-  console.log(greet ());gir 
+  console.log(greet ());
+
+// 4. Even & odd numbers  
+function evenOrOdd(number) {
+    if (number % 2 === 0) {
+        return "Even";
+    }
+    if (number % 2 !==0){
+        return "Odd";
+    }
+}
+console.log (evenOrOdd(4));
+console.log (evenOrOdd(3));
