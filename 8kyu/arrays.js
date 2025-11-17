@@ -40,3 +40,13 @@ function evenOrOdd(number) {
 }
 console.log (evenOrOdd(4));
 console.log (evenOrOdd(3));
+
+// 5. If palindrome
+function isPalindrome(x) {
+    const lowercase = x.toLowerCase();
+    const reverseX = lowercase.split(" ").reverse( ).join(" ");
+    if (lowercase === reverseX) {
+        return true;
+    } else return false;
+}
+console.log (isPalindrome("Abba"));
